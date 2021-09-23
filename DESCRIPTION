@@ -1,6 +1,6 @@
 Package: taylor
 Title: Lyrics and Song Data for Taylor Swift's Discography
-Version: 0.2.0
+Version: 0.2.1
 Authors@R: 
     person(given = "W. Jake",
            family = "Thompson",
@@ -27,9 +27,9 @@ Language: en-US
 LazyData: true
 RoxygenNote: 7.1.1
 NeedsCompilation: no
-Packaged: 2021-08-16 17:42:03 UTC; jakethompson
+Packaged: 2021-09-23 21:31:03 UTC; jakethompson
 Author: W. Jake Thompson [aut, cre, cph]
     (<https://orcid.org/0000-0001-7339-0300>)
 Maintainer: W. Jake Thompson <wjakethompson@gmail.com>
 Repository: CRAN
-Date/Publication: 2021-08-17 08:00:02 UTC
+Date/Publication: 2021-09-23 21:40:02 UTC

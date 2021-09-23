@@ -1,21 +1,24 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# taylor <a href='https://taylor.wjakethompson.com'><img src='man/figures/logo.png' align="right" height="138" /></a>
+# taylor <img src="man/figures/logo.png" align="right" width="120" />
 
 <!-- badges: start -->
 
 [![Project Status: Active – The project has reached a stable, usable
 state and is being actively
 developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
-[![Signed
-by](https://img.shields.io/badge/Keybase-Verified-brightgreen.svg)](https://keybase.io/wjakethompson)
+[![CRAN
+status](https://www.r-pkg.org/badges/version/taylor)](https://CRAN.R-project.org/package=taylor)
 [![R-CMD-check](https://github.com/wjakethompson/taylor/workflows/R-CMD-check/badge.svg)](https://github.com/wjakethompson/taylor/actions)
 [![codecov](https://codecov.io/gh/wjakethompson/taylor/branch/main/graph/badge.svg?token=TECvfoOYHh)](https://codecov.io/gh/wjakethompson/taylor)
 ![Minimal R
 Version](https://img.shields.io/badge/R%3E%3D-3.6.0-blue.svg)
-![License](https://img.shields.io/badge/License-MIT-blue.svg)
+![License](https://img.shields.io/badge/License-MIT-blue.svg) [![Signed
+by](https://img.shields.io/badge/Keybase-Verified-brightgreen.svg)](https://keybase.io/wjakethompson)
 <!-- badges: end -->
+
+## Overview
 
 The goal of {taylor} is to provide easy access to a curated data set of
 Taylor Swift songs, including lyrics and audio characteristics. Data
@@ -26,8 +29,15 @@ API](https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02).
 
 ## Installation
 
-You can install the development version from
-[GitHub](https://github.com/) with:
+You can install the released version of {taylor} from
+[CRAN](https://cran.r-project.org/) with:
+
+``` r
+install.packages(taylor)
+```
+
+To install the development version from [GitHub](https://github.com/)
+use:
 
 ``` r
 # install.packages("remotes")
@@ -75,7 +85,7 @@ as *Taylor’s Version*.
 
 ``` r
 taylor_all_songs
-#> # A tibble: 213 × 29
+#> # A tibble: 214 × 29
 #>    album_name  ep    album_release track_number track_name     artist  featuring
 #>    <chr>       <lgl> <date>               <int> <chr>          <chr>   <chr>    
 #>  1 Taylor Swi… FALSE 2006-10-24               1 Tim McGraw     Taylor… <NA>     
@@ -88,7 +98,7 @@ taylor_all_songs
 #>  8 Taylor Swi… FALSE 2006-10-24               8 Stay Beautiful Taylor… <NA>     
 #>  9 Taylor Swi… FALSE 2006-10-24               9 Should've Sai… Taylor… <NA>     
 #> 10 Taylor Swi… FALSE 2006-10-24              10 Mary's Song (… Taylor… <NA>     
-#> # … with 203 more rows, and 22 more variables: bonus_track <lgl>,
+#> # … with 204 more rows, and 22 more variables: bonus_track <lgl>,
 #> #   promotional_release <date>, single_release <date>, track_release <date>,
 #> #   danceability <dbl>, energy <dbl>, key <int>, loudness <dbl>, mode <int>,
 #> #   speechiness <dbl>, acousticness <dbl>, instrumentalness <dbl>,
