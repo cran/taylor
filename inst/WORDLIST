@@ -16,6 +16,8 @@ ggplot
 ggplots
 metacritic
 palmerpenguins
+pkgdown
+rlang
 stan
 testthat
 vctrs

@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# taylor <img src="man/figures/logo.png" align="right" width="120" />
+# taylor
 
 <!-- badges: start -->
 
@@ -11,14 +11,14 @@ developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.re
 [![CRAN
 status](https://www.r-pkg.org/badges/version/taylor)](https://CRAN.R-project.org/package=taylor)
 [![R-CMD-check](https://github.com/wjakethompson/taylor/workflows/R-CMD-check/badge.svg)](https://github.com/wjakethompson/taylor/actions)
-[![codecov](https://codecov.io/gh/wjakethompson/taylor/branch/main/graph/badge.svg?token=TECvfoOYHh)](https://codecov.io/gh/wjakethompson/taylor)
+[![codecov](https://codecov.io/gh/wjakethompson/taylor/branch/main/graph/badge.svg?token=TECvfoOYHh)](https://app.codecov.io/gh/wjakethompson/taylor)
 ![Minimal R
 Version](https://img.shields.io/badge/R%3E%3D-3.6.0-blue.svg)
 ![License](https://img.shields.io/badge/License-MIT-blue.svg) [![Signed
 by](https://img.shields.io/badge/Keybase-Verified-brightgreen.svg)](https://keybase.io/wjakethompson)
 <!-- badges: end -->
 
-## Overview
+## Overview <img src="man/figures/logo.png" align="right" width="120" />
 
 The goal of {taylor} is to provide easy access to a curated data set of
 Taylor Swift songs, including lyrics and audio characteristics. Data
@@ -56,20 +56,20 @@ Version)*). We stan artists owning their own songs.
 
 ``` r
 taylor_album_songs
-#> # A tibble: 163 × 29
-#>    album_name  ep    album_release track_number track_name     artist  featuring
-#>    <chr>       <lgl> <date>               <int> <chr>          <chr>   <chr>    
-#>  1 Taylor Swi… FALSE 2006-10-24               1 Tim McGraw     Taylor… <NA>     
-#>  2 Taylor Swi… FALSE 2006-10-24               2 Picture To Bu… Taylor… <NA>     
-#>  3 Taylor Swi… FALSE 2006-10-24               3 Teardrops On … Taylor… <NA>     
-#>  4 Taylor Swi… FALSE 2006-10-24               4 A Place In Th… Taylor… <NA>     
-#>  5 Taylor Swi… FALSE 2006-10-24               5 Cold As You    Taylor… <NA>     
-#>  6 Taylor Swi… FALSE 2006-10-24               6 The Outside    Taylor… <NA>     
-#>  7 Taylor Swi… FALSE 2006-10-24               7 Tied Together… Taylor… <NA>     
-#>  8 Taylor Swi… FALSE 2006-10-24               8 Stay Beautiful Taylor… <NA>     
-#>  9 Taylor Swi… FALSE 2006-10-24               9 Should've Sai… Taylor… <NA>     
-#> 10 Taylor Swi… FALSE 2006-10-24              10 Mary's Song (… Taylor… <NA>     
-#> # … with 153 more rows, and 22 more variables: bonus_track <lgl>,
+#> # A tibble: 171 × 29
+#>    album_name   ep    album_release track_number track_name    artist  featuring
+#>    <chr>        <lgl> <date>               <int> <chr>         <chr>   <chr>    
+#>  1 Taylor Swift FALSE 2006-10-24               1 Tim McGraw    Taylor… <NA>     
+#>  2 Taylor Swift FALSE 2006-10-24               2 Picture To B… Taylor… <NA>     
+#>  3 Taylor Swift FALSE 2006-10-24               3 Teardrops On… Taylor… <NA>     
+#>  4 Taylor Swift FALSE 2006-10-24               4 A Place In T… Taylor… <NA>     
+#>  5 Taylor Swift FALSE 2006-10-24               5 Cold As You   Taylor… <NA>     
+#>  6 Taylor Swift FALSE 2006-10-24               6 The Outside   Taylor… <NA>     
+#>  7 Taylor Swift FALSE 2006-10-24               7 Tied Togethe… Taylor… <NA>     
+#>  8 Taylor Swift FALSE 2006-10-24               8 Stay Beautif… Taylor… <NA>     
+#>  9 Taylor Swift FALSE 2006-10-24               9 Should've Sa… Taylor… <NA>     
+#> 10 Taylor Swift FALSE 2006-10-24              10 Mary's Song … Taylor… <NA>     
+#> # … with 161 more rows, and 22 more variables: bonus_track <lgl>,
 #> #   promotional_release <date>, single_release <date>, track_release <date>,
 #> #   danceability <dbl>, energy <dbl>, key <int>, loudness <dbl>, mode <int>,
 #> #   speechiness <dbl>, acousticness <dbl>, instrumentalness <dbl>,
@@ -85,20 +85,20 @@ as *Taylor’s Version*.
 
 ``` r
 taylor_all_songs
-#> # A tibble: 214 × 29
-#>    album_name  ep    album_release track_number track_name     artist  featuring
-#>    <chr>       <lgl> <date>               <int> <chr>          <chr>   <chr>    
-#>  1 Taylor Swi… FALSE 2006-10-24               1 Tim McGraw     Taylor… <NA>     
-#>  2 Taylor Swi… FALSE 2006-10-24               2 Picture To Bu… Taylor… <NA>     
-#>  3 Taylor Swi… FALSE 2006-10-24               3 Teardrops On … Taylor… <NA>     
-#>  4 Taylor Swi… FALSE 2006-10-24               4 A Place In Th… Taylor… <NA>     
-#>  5 Taylor Swi… FALSE 2006-10-24               5 Cold As You    Taylor… <NA>     
-#>  6 Taylor Swi… FALSE 2006-10-24               6 The Outside    Taylor… <NA>     
-#>  7 Taylor Swi… FALSE 2006-10-24               7 Tied Together… Taylor… <NA>     
-#>  8 Taylor Swi… FALSE 2006-10-24               8 Stay Beautiful Taylor… <NA>     
-#>  9 Taylor Swi… FALSE 2006-10-24               9 Should've Sai… Taylor… <NA>     
-#> 10 Taylor Swi… FALSE 2006-10-24              10 Mary's Song (… Taylor… <NA>     
-#> # … with 204 more rows, and 22 more variables: bonus_track <lgl>,
+#> # A tibble: 245 × 29
+#>    album_name   ep    album_release track_number track_name    artist  featuring
+#>    <chr>        <lgl> <date>               <int> <chr>         <chr>   <chr>    
+#>  1 Taylor Swift FALSE 2006-10-24               1 Tim McGraw    Taylor… <NA>     
+#>  2 Taylor Swift FALSE 2006-10-24               2 Picture To B… Taylor… <NA>     
+#>  3 Taylor Swift FALSE 2006-10-24               3 Teardrops On… Taylor… <NA>     
+#>  4 Taylor Swift FALSE 2006-10-24               4 A Place In T… Taylor… <NA>     
+#>  5 Taylor Swift FALSE 2006-10-24               5 Cold As You   Taylor… <NA>     
+#>  6 Taylor Swift FALSE 2006-10-24               6 The Outside   Taylor… <NA>     
+#>  7 Taylor Swift FALSE 2006-10-24               7 Tied Togethe… Taylor… <NA>     
+#>  8 Taylor Swift FALSE 2006-10-24               8 Stay Beautif… Taylor… <NA>     
+#>  9 Taylor Swift FALSE 2006-10-24               9 Should've Sa… Taylor… <NA>     
+#> 10 Taylor Swift FALSE 2006-10-24              10 Mary's Song … Taylor… <NA>     
+#> # … with 235 more rows, and 22 more variables: bonus_track <lgl>,
 #> #   promotional_release <date>, single_release <date>, track_release <date>,
 #> #   danceability <dbl>, energy <dbl>, key <int>, loudness <dbl>, mode <int>,
 #> #   speechiness <dbl>, acousticness <dbl>, instrumentalness <dbl>,
@@ -112,7 +112,7 @@ Taylor’s album release history.
 
 ``` r
 taylor_albums
-#> # A tibble: 12 × 4
+#> # A tibble: 13 × 4
 #>    album_name                          ep    album_release metacritic_score
 #>    <chr>                               <lgl> <date>                   <int>
 #>  1 Taylor Swift                        FALSE 2006-10-24                  NA
@@ -127,6 +127,7 @@ taylor_albums
 #> 10 folklore                            FALSE 2020-07-24                  88
 #> 11 evermore                            FALSE 2020-12-11                  85
 #> 12 Fearless (Taylor's Version)         FALSE 2021-04-09                  82
+#> 13 Red (Taylor's Version)              FALSE 2021-11-12                  96
 ```
 
 ## Code of Conduct
