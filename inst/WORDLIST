@@ -2,12 +2,14 @@ CMD
 Colormind
 EP
 EPs
+Mendes
 Metacritic
+Midnights
 Premade
+Sheeran's
 Spotify
 YYYY
 codecov
-colormap
 colour
 colours
 cpcinema
@@ -21,4 +23,3 @@ rlang
 stan
 testthat
 vctrs
-viridis
