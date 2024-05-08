@@ -12,7 +12,7 @@ developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.re
 [![R package
 version](https://www.r-pkg.org/badges/version/taylor)](https://CRAN.R-project.org/package=taylor)
 [![Package
-downloads](https://cranlogs.r-pkg.org/badges/taylor)](https://cran.r-project.org/package=taylor)</br>
+downloads](https://cranlogs.r-pkg.org/badges/grand-total/taylor)](https://cran.r-project.org/package=measr)</br>
 [![R-CMD-check](https://github.com/wjakethompson/taylor/workflows/R-CMD-check/badge.svg)](https://github.com/wjakethompson/taylor/actions)
 [![codecov](https://codecov.io/gh/wjakethompson/taylor/branch/main/graph/badge.svg?token=TECvfoOYHh)](https://app.codecov.io/gh/wjakethompson/taylor)
 [![Netlify
@@ -24,7 +24,7 @@ by](https://img.shields.io/badge/Keybase-Verified-brightgreen.svg)](https://keyb
 
 ## Overview <img src="man/figures/logo.png" align="right" width="120" />
 
-The goal of {taylor} is to provide easy access to a curated data set of
+The goal of taylor is to provide easy access to a curated data set of
 Taylor Swift songs, including lyrics and audio characteristics. Data
 comes [Genius](https://genius.com/artists/Taylor-swift) and the [Spotify
 API](https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02).
@@ -33,11 +33,11 @@ API](https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02).
 
 ## Installation
 
-You can install the released version of {taylor} from
+You can install the released version of taylor from
 [CRAN](https://cran.r-project.org/) with:
 
 ``` r
-install.packages(taylor)
+install.packages("taylor")
 ```
 
 To install the development version from [GitHub](https://github.com/)
@@ -56,11 +56,11 @@ Taylor’s official studio albums. Notably this excludes singles released
 separately from an album (e.g., *Only the Young*, *Christmas Tree Farm*,
 etc.), and non-Taylor-owned albums that have a Taylor-owned alternative
 (e.g., *Fearless* is excluded in favor of *Fearless (Taylor’s
-Version)*). We stan artists owning their own songs.
+Version)*). We support artists owning their work.
 
 ``` r
 taylor_album_songs
-#> # A tibble: 209 × 29
+#> # A tibble: 240 × 29
 #>    album_name   ep    album_release track_number track_name     artist featuring
 #>    <chr>        <lgl> <date>               <int> <chr>          <chr>  <chr>    
 #>  1 Taylor Swift FALSE 2006-10-24               1 Tim McGraw     Taylo… <NA>     
@@ -73,7 +73,7 @@ taylor_album_songs
 #>  8 Taylor Swift FALSE 2006-10-24               8 Stay Beautiful Taylo… <NA>     
 #>  9 Taylor Swift FALSE 2006-10-24               9 Should've Sai… Taylo… <NA>     
 #> 10 Taylor Swift FALSE 2006-10-24              10 Mary's Song (… Taylo… <NA>     
-#> # ℹ 199 more rows
+#> # ℹ 230 more rows
 #> # ℹ 22 more variables: bonus_track <lgl>, promotional_release <date>,
 #> #   single_release <date>, track_release <date>, danceability <dbl>,
 #> #   energy <dbl>, key <int>, loudness <dbl>, mode <int>, speechiness <dbl>,
@@ -89,7 +89,7 @@ as *Taylor’s Version*.
 
 ``` r
 taylor_all_songs
-#> # A tibble: 325 × 29
+#> # A tibble: 356 × 29
 #>    album_name   ep    album_release track_number track_name     artist featuring
 #>    <chr>        <lgl> <date>               <int> <chr>          <chr>  <chr>    
 #>  1 Taylor Swift FALSE 2006-10-24               1 Tim McGraw     Taylo… <NA>     
@@ -102,7 +102,7 @@ taylor_all_songs
 #>  8 Taylor Swift FALSE 2006-10-24               8 Stay Beautiful Taylo… <NA>     
 #>  9 Taylor Swift FALSE 2006-10-24               9 Should've Sai… Taylo… <NA>     
 #> 10 Taylor Swift FALSE 2006-10-24              10 Mary's Song (… Taylo… <NA>     
-#> # ℹ 315 more rows
+#> # ℹ 346 more rows
 #> # ℹ 22 more variables: bonus_track <lgl>, promotional_release <date>,
 #> #   single_release <date>, track_release <date>, danceability <dbl>,
 #> #   energy <dbl>, key <int>, loudness <dbl>, mode <int>, speechiness <dbl>,
@@ -116,7 +116,7 @@ Taylor’s album release history.
 
 ``` r
 taylor_albums
-#> # A tibble: 16 × 5
+#> # A tibble: 17 × 5
 #>    album_name                    ep    album_release metacritic_score user_score
 #>    <chr>                         <lgl> <date>                   <int>      <dbl>
 #>  1 Taylor Swift                  FALSE 2006-10-24                  67        8.4
@@ -134,11 +134,15 @@ taylor_albums
 #> 13 Red (Taylor's Version)        FALSE 2021-11-12                  91        8.9
 #> 14 Midnights                     FALSE 2022-10-21                  85        8.3
 #> 15 Speak Now (Taylor's Version)  FALSE 2023-07-07                  81        9.2
-#> 16 1989 (Taylor's Version)       FALSE 2023-10-27                  95       NA
+#> 16 1989 (Taylor's Version)       FALSE 2023-10-27                  90       NA  
+#> 17 THE TORTURED POETS DEPARTMENT FALSE 2024-04-19                  76       NA
 ```
 
 ## Code of Conduct
 
-Please note that the {taylor} project is released with a [Contributor
-Code of Conduct](https://taylor.wjakethompson.com/CODE_OF_CONDUCT.html).
-By contributing to this project, you agree to abide by its terms.
+Contributions are welcome. To ensure a smooth process, please review the
+[Contributing
+Guide](https://taylor.wjakethompson.com/CONTRIBUTING.html). Please note
+that the taylor project is released with a [Contributor Code of
+Conduct](https://taylor.wjakethompson.com/CODE_OF_CONDUCT.html). By
+contributing to this project, you agree to abide by its terms.

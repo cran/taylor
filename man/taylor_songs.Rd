@@ -7,7 +7,7 @@
 \title{Data for Taylor Swift songs}
 \format{
 \code{taylor_all_songs} is a \link[tibble:tibble-package]{tibble} with
-325 rows and 29 variables.
+356 rows and 29 variables.
 Each row is one song.
 \itemize{
 \item \code{album_name}: The name of the album. \code{NA} if the song was released
@@ -66,8 +66,8 @@ euphoric).
 (\code{FALSE}).
 }
 
-Finally, the last set of variables include those calculated from the Spotify
-API data, and a list column containing song lyrics.
+Finally, the last set of variables includes those calculated from the Spotify
+API data, and a list-column containing song lyrics.
 \itemize{
 \item \code{key_name}: Corresponds directly to the \code{key}, but the integer is converted
 to the key name using Pitch Class notation (e.g., \code{0} becomes \code{C}).
@@ -75,8 +75,10 @@ to the key name using Pitch Class notation (e.g., \code{0} becomes \code{C}).
 converted to the mode name (e.g., \code{0} becomes \code{minor}).
 \item \code{key_mode}: A combination of the \code{key_name} and \code{mode_name} variables
 (e.g., \verb{C minor}).
-\item \code{lyrics}: A list column containing the lyrics to each song. Each element is
-a data frame with 4 variables:
+\item \code{lyrics}: A list-column containing the lyrics to each song. The lyrics can
+be unnested with \code{\link[tidyr:unnest]{tidyr::unnest()}} (i.e.,
+\code{tidyr::unnest(taylor_all_songs, lyrics)}). Each element is a data frame
+with 4 variables. :
 \itemize{
 \item \code{line}: The line number of the song.
 \item \code{lyric}: The lyric for the given line.
@@ -84,13 +86,13 @@ a data frame with 4 variables:
 defined by \url{https://genius.com/} (e.g., \verb{Verse 1}, \code{Chorus}, etc.).
 \item \code{element_artist}: The artist performing the element. Usually
 \verb{Taylor Swift}, but other artists appear if they are featured on the
-track (e.g., \code{HAIM} is featured on \emph{No Body, No Crime}).
+track (e.g., \code{HAIM} is featured on \emph{no body, no crime}).
 }
 }
 
 \code{taylor_album_songs} is a \link[tibble:tibble-package]{tibble} containing
 the same 29 variables, but only with
-209 rows, one for each song from an official studio
+240 rows, one for each song from an official studio
 album (see Details).
 }
 \source{
@@ -104,7 +106,7 @@ taylor_all_songs
 taylor_album_songs
 }
 \description{
-A data containing lyrics to and characteristics of all officially
+A data set containing lyrics to, and characteristics of, all officially
 released Taylor Swift songs. This includes albums, EPs, and individually
 released singles.
 }
@@ -146,6 +148,6 @@ although both \emph{Fearless} and \emph{Fearless (Taylor's Version)} appear in t
 \code{\link{taylor_all_songs}} data, only \emph{Fearless (Taylor's Version)} appears in this
 subset. This also means that this data set will change as additional
 re-releases are made available (i.e., \emph{Red} was replaced with
-\emph{Red (Taylor's Version)} in \href{https://www.wjakethompson.com/blog/taylor/2021-12-17-taylor-1.0.0/}{version 1.0.0}).
+\emph{Red (Taylor's Version)} in \href{https://wjakethompson.com/blog/taylor/2021-12-17-taylor-1.0.0/}{version 1.0.0}).
 }
 \keyword{datasets}
