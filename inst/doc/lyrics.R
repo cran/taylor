@@ -1,7 +1,9 @@
 ## ----chunk-options, include=FALSE---------------------------------------------
-if (requireNamespace("pkgdown", quietly = TRUE) && pkgdown::in_pkgdown()) {
+library(taylor)
+
+if (identical(Sys.getenv("IN_PKGDOWN"), "true")) {
   tiny_width <- small_width <- med_width <- 7
-  large_width <- 8
+  large_width <- 9
 } else {
   tiny_width <- small_width <- med_width <- 5
   large_width <- 5.5
@@ -48,9 +50,7 @@ track_lyrics %>%
   unnest(lyrics)
 
 ## -----------------------------------------------------------------------------
-library(purrr)
-
 track_lyrics %>%
   filter(album_name == "Lover") %>%
-  mutate(lines = map_int(lyrics, nrow))
+  mutate(lines = vapply(lyrics, nrow, integer(1)))
 

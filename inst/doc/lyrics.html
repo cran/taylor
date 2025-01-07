@@ -429,12 +429,10 @@ track_lyrics %&gt;%
 In this case, we don’t necessarily need to unnest each element.
 Instead, we can use a combination of <code>dplyr::mutate()</code> and <code>purrr::map()</code> to apply a function to each element of the list-column.
 For example, we if want to know the number of lines in each song, we can apply <code>nrow()</code> to each element of the list column.
-Because <code>nrow()</code> returns and integer value, we’ll use <code>purrr::map_int()</code>.</p>
-<pre class="r"><code>library(purrr)
-
-track_lyrics %&gt;%
+Because <code>nrow()</code> returns and integer value, we’ll use <code>vapply()</code> (we could also use <code>purrr::map_int()</code>).</p>
+<pre class="r"><code>track_lyrics %&gt;%
   filter(album_name == &quot;Lover&quot;) %&gt;%
-  mutate(lines = map_int(lyrics, nrow))
+  mutate(lines = vapply(lyrics, nrow, integer(1)))
 #&gt; # A tibble: 18 × 4
 #&gt;    album_name track_name                             lyrics            lines
 #&gt;    &lt;chr&gt;      &lt;chr&gt;                                  &lt;list&gt;            &lt;int&gt;

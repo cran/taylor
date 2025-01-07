@@ -1,3 +1,33 @@
+# taylor 3.2.0
+
+## New features
+
+* `taylor_all_songs` has been updated to include the new feature, "us.", from
+  Gracie Abrams's *The Secret of Us*.
+
+* `taylor_all_songs` has been updated to include songs for which Taylor has
+  written (but didn't record or feature on). This includes:
+  * "1 step forward, 3 steps back" and "deja vu" from Olivia Rodrigo's *SOUR*
+  * "Best Days Of Your Life" from Kellie Pickler's self-titled album
+  * "Better Man" from Little Big Town's *The Breaker*
+  * "This is What You Came For" by Calvin Harris (feat. Rihanna)
+  * "TMZ" from Weird Al Yankovic's *Apocalypse*
+  * "You'll Always Find Your Way Back Home" from Miley Cyrus on the
+    *Hannah Montana: The Movie* soundtrack
+
+## Minor improvements and fixes
+
+* Error messages have been improved display the function that was called,
+  rather than function where the error appeared (@olivroy, #49).
+
+* Color palettes are now displayed using cli instead of crayon (@olivroy, #49).
+
+* Spotify data for John Mayer's "Half Of My Heart," has been removed, as the
+  version featuring Taylor Swift is no longer available.
+  
+* `eras_tour_surprise` has been updated to include surprise songs from the
+  European and final North American legs of the tour.
+
 # taylor 3.1.0
 
 ## New features
@@ -16,7 +46,7 @@
 * Surprise songs from the South American and Asia-Pacific legs of the tour have
   been added to `eras_tour_surprise`.
 
-## Minor improvements and fixed
+## Minor improvements and fixes
 
 * Fixed installation instructions in README (@scarioscia, #37).
 
